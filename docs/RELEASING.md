@@ -35,6 +35,11 @@ CI checks out the full history (`fetch-depth: 0`) so the count is correct. Set `
    git push --follow-tags
    ```
 
+   **Or, without pushing a tag from your machine:** push the version commit to `main`, then open
+   **Actions → Release → Run workflow**, pick `main` and enter the tag (for example `v1.2.0`). The
+   workflow runs every check first, then creates the annotated tag on that commit (attributed to
+   you) and publishes the release.
+
 5. The [Release workflow](../.github/workflows/release.yml):
    - checks that the tag, `package.json` and `CHANGELOG.md` agree,
    - runs lint, type checks, rule validation, unit tests and end-to-end tests,

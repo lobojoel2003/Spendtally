@@ -230,19 +230,19 @@ tests/e2e/           Playwright
 - **Releasing:**
   1. Add a `## [X.Y.Z] - YYYY-MM-DD` section to `CHANGELOG.md`.
   2. Run `npm version X.Y.Z -m "chore(release): v%s"`. This bumps `package.json`, checks the changelog, commits and tags.
-  3. Run `git push --follow-tags`. The **Release** workflow checks that the tag, `package.json` and the changelog agree, runs every test, builds, and publishes a GitHub Release with the web bundle, a sample packet and `SHA256SUMS.txt`.
+  3. Run `git push --follow-tags`, or push the commit and start **Actions → Release → Run workflow** with the tag name. The **Release** workflow checks that the tag, `package.json` and the changelog agree, runs every test, builds, creates the tag if needed, and publishes a GitHub Release with the web bundle, a sample packet and `SHA256SUMS.txt`.
 
 See [docs/RELEASING.md](docs/RELEASING.md) for details.
 
 ## CI/CD
 
-| Workflow                                 | Trigger                       | What it does                                                                                                                                                                             |
-| ---------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CI](.github/workflows/ci.yml)           | Push to `main`, pull requests | Prettier, ESLint, TypeScript, state-rules schema, version/changelog check, unit tests with coverage summary → production build (artifact) → Playwright end-to-end tests on the built app |
-| [Deploy](.github/workflows/deploy.yml)   | Push to `main`                | Tests, builds with the Pages base path, and publishes to GitHub Pages                                                                                                                    |
-| [Release](.github/workflows/release.yml) | Tag `v*.*.*`                  | Verifies the version, runs all tests, builds, packages and publishes the GitHub Release                                                                                                  |
-| [CodeQL](.github/workflows/codeql.yml)   | Push, PRs, weekly             | Static security analysis                                                                                                                                                                 |
-| [Dependabot](.github/dependabot.yml)     | Weekly                        | Grouped npm and GitHub Actions updates                                                                                                                                                   |
+| Workflow                                 | Trigger                                       | What it does                                                                                                                                                                             |
+| ---------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [CI](.github/workflows/ci.yml)           | Push to `main`, pull requests                 | Prettier, ESLint, TypeScript, state-rules schema, version/changelog check, unit tests with coverage summary → production build (artifact) → Playwright end-to-end tests on the built app |
+| [Deploy](.github/workflows/deploy.yml)   | Push to `main`                                | Tests, builds with the Pages base path, and publishes to GitHub Pages                                                                                                                    |
+| [Release](.github/workflows/release.yml) | Tag `v*.*.*`, or a manual run with a tag name | Verifies the version, runs all tests, builds, creates the tag if needed, packages and publishes the GitHub Release                                                                       |
+| [CodeQL](.github/workflows/codeql.yml)   | Push, PRs, weekly                             | Static security analysis                                                                                                                                                                 |
+| [Dependabot](.github/dependabot.yml)     | Weekly                                        | Grouped npm and GitHub Actions updates                                                                                                                                                   |
 
 > **One-time setup for the live app:** in the repository, open **Settings → Pages** and set **Source** to **GitHub Actions**. The next push to `main` (or a manual run of _Deploy to GitHub Pages_) publishes the app.
 

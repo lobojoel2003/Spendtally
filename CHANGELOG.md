@@ -24,7 +24,7 @@ The first public release of Spendtally: a local-first, installable app that trac
 - **"How spend-down works" guide** with the selected state's rules, sources and the 2027 retroactive-coverage change.
 - **PWA:** installable, works offline, precaches the app shell, caches the OCR engine on first use, prompts when an update is ready, and asks for persistent storage.
 - **Accessibility:** large type and tap targets, screen-reader labels, focus styles, skip link and reduced-motion support.
-- **Tooling:** Vitest unit tests, Playwright end-to-end tests (including a real OCR scan), ESLint, Prettier, TypeScript strict mode, CI, a Pages deploy, tag-driven releases, CodeQL and Dependabot.
+- **Tooling:** Vitest unit tests, Playwright end-to-end tests (including a real OCR scan), ESLint, Prettier, TypeScript strict mode, CI, a Pages deploy, releases from a tag push or a one-click manual run, CodeQL and Dependabot.
 
 [Unreleased]: https://github.com/lobojoel2003/Spendtally/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/lobojoel2003/Spendtally/releases/tag/v1.0.0
