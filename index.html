@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-text="normal">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Spendtally — Medicaid spend-down bill tracker</title>
+    <meta
+      name="description"
+      content="Track medical bills against your Medicaid spend-down, month by month. Snap a bill, see your progress, and build your submission packet. Private and offline."
+    />
+    <meta name="theme-color" content="#f6f4ee" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Spendtally" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:title" content="Spendtally — Medicaid spend-down bill tracker" />
+    <meta
+      property="og:description"
+      content="Snap a bill, see your spend-down progress, and build your submission packet."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      // Apply theme before first paint so there is no flash.
+      try {
+        var raw = localStorage.getItem('spendtally:display');
+        var d = raw ? JSON.parse(raw) : {};
+        var dark =
+          d.theme === 'dark' ||
+          ((!d.theme || d.theme === 'system') &&
+            matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        if (d.textSize) document.documentElement.dataset.text = d.textSize;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <noscript>Spendtally needs JavaScript to run.</noscript>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

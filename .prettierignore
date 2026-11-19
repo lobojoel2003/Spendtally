@@ -1,0 +1,10 @@
+dist
+coverage
+public/ocr
+node_modules
+package-lock.json
+LICENSE
+docs/images
+playwright-report
+test-results
+docs/research

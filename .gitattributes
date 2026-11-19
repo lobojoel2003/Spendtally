@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
+*.gz binary
+package-lock.json linguist-generated=true
+docs/research/** linguist-documentation=true
