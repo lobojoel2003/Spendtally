@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/lobojoel2003/Spendtally/security/advisories/new
+    about: Please report security issues privately.
+  - name: Help with your Medicaid case
+    url: https://www.shiphelp.org/
+    about: Spendtally can't give legal advice. Your State Health Insurance Assistance Program (SHIP) offers free counseling.

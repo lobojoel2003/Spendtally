@@ -1,0 +1,25 @@
+name: State rules correction
+description: A state's spend-down rules are wrong, missing or out of date
+labels: [state-rules]
+body:
+  - type: input
+    id: state
+    attributes:
+      label: State
+      placeholder: e.g. New York
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong or missing?
+      description: Period length, how bills are sent, pay-in option, carry-over rules, notes…
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links to official manuals, agency pages or legal-aid guides that support the change.
+    validations:
+      required: true

@@ -1,0 +1,41 @@
+name: Bug report
+description: Something in Spendtally isn't working
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Please don't include real bills, names, Medicaid IDs or other personal information.**
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Tap …
+        3. See …
+  - type: input
+    id: version
+    attributes:
+      label: App version and build
+      description: Settings → About, e.g. "1.0.0 (build 42)"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: iPhone 15, Safari 19 / Pixel 8, Chrome 142 / Windows, Edge
+    validations:
+      required: true
+  - type: input
+    id: state
+    attributes:
+      label: State selected in Spendtally
