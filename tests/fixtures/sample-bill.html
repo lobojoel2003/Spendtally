@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 0;
+        background: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #111;
+      }
+      .page {
+        width: 1000px;
+        padding: 56px 64px;
+        box-sizing: border-box;
+      }
+      .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 3px solid #1d4f91;
+        padding-bottom: 18px;
+      }
+      .name {
+        font-size: 40px;
+        font-weight: 700;
+        color: #1d4f91;
+        letter-spacing: 1px;
+      }
+      .addr {
+        font-size: 22px;
+        line-height: 1.4;
+        margin-top: 6px;
+      }
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: right;
+      }
+      .meta {
+        font-size: 24px;
+        line-height: 1.7;
+        margin-top: 26px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 26px;
+        font-size: 24px;
+      }
+      th {
+        text-align: left;
+        border-bottom: 2px solid #111;
+        padding: 8px 4px;
+      }
+      td {
+        padding: 10px 4px;
+        border-bottom: 1px solid #bbb;
+      }
+      td.r,
+      th.r {
+        text-align: right;
+      }
+      .due {
+        margin-top: 34px;
+        font-size: 32px;
+        font-weight: 700;
+        border: 3px solid #111;
+        padding: 18px 22px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .foot {
+        margin-top: 28px;
+        font-size: 20px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="head">
+        <div>
+          <div class="name">MERCY GENERAL HOSPITAL</div>
+          <div class="addr">1200 Harbor Avenue<br />Albany, NY 12208</div>
+        </div>
+        <div class="title">PATIENT STATEMENT</div>
+      </div>
+      <div class="meta">
+        Statement Date: 11/14/2026<br />
+        Patient: Rose Alvarez &nbsp;&nbsp; Account: 448812<br />
+        Date of Service: 10/28/2026
+      </div>
+      <table>
+        <tr>
+          <th>Description</th>
+          <th class="r">Charges</th>
+        </tr>
+        <tr>
+          <td>Emergency room visit</td>
+          <td class="r">$1,480.00</td>
+        </tr>
+        <tr>
+          <td>Lab work</td>
+          <td class="r">$212.40</td>
+        </tr>
+        <tr>
+          <td>Insurance payments</td>
+          <td class="r">-$1,301.12</td>
+        </tr>
+      </table>
+      <div class="due"><span>Amount Due:</span><span>$391.28</span></div>
+      <div class="foot">
+        Due Date: 12/05/2026 &nbsp;·&nbsp; Please detach and return with your payment
+      </div>
+    </div>
+  </body>
+</html>
