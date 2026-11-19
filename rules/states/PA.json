@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema.json",
+  "code": "PA",
+  "name": "Pennsylvania",
+  "programName": "Medically Needy Only (MNO) Medical Assistance",
+  "spenddownTerm": "spend-down",
+  "agency": "County Assistance Office (Pennsylvania DHS)",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "Your income is compared over a six-month period, and your medical costs must cover the extra income for that period."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Give proof of your medical bills to your County Assistance Office. For unpaid bills, show that the provider has not written them off and you still owe them."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Health insurance premiums are counted through the spend-down.",
+    "Only the part of a bill needed to qualify is used; the rest can count later within the allowed time.",
+    "Unpaid bills from the retroactive months can count if you still owe them. A payment plan is not required."
+  ],
+  "sources": [
+    {
+      "title": "361.5 Medical Expense Deductions - PA DHS Medical Assistance Eligibility Handbook",
+      "url": "http://services.dpw.state.pa.us/oimpolicymanuals/ma/361_MNO_Deductions/361_5_Medical_Expense_Deductions.htm"
+    },
+    {
+      "title": "Medicaid for Older People and People with Disabilities - PA DHS",
+      "url": "https://www.pa.gov/agencies/dhs/resources/aging-physical-disabilities/medicaid-older-people-and-people-with-disabilities"
+    },
+    {
+      "title": "376.2 Renewal - PA DHS Medical Assistance Eligibility Handbook",
+      "url": "http://services.dpw.state.pa.us/oimpolicymanuals/ma/376_Renewal/376_2_Complete_Renewal.htm"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

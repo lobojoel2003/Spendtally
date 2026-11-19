@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema.json",
+  "code": "MD",
+  "name": "Maryland",
+  "programName": "Medically Needy Medical Assistance (Spend-down)",
+  "spenddownTerm": "spend-down",
+  "agency": "Local Department of Social Services",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "Eligibility is figured over a six-month period that starts with the month you apply."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Give your case manager at the local Department of Social Services a bill or receipt showing the service, the date, and how much you still owe."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "If insurance might pay a bill, it must be sent to the insurer and denied before it can count.",
+    "Bills count when you get the care; future costs cannot be estimated ahead of time.",
+    "Bills for medicine or equipment must list the item, the date and the cost."
+  ],
+  "sources": [
+    {
+      "title": "Section 900 Determining Financial Eligibility for Non-Institutionalized Persons - Maryland Medical Assistance Manual",
+      "url": "https://health.maryland.gov/mmcp/Medicaid%20Manual/Section%20900-%20Determining%20Finanicial%20Eligib.%20For%20Non-Institutionalized%20Persons.pdf"
+    },
+    {
+      "title": "Section 1100 Certification Periods - Maryland Medical Assistance Manual",
+      "url": "https://health.maryland.gov/mmcp/Medicaid%20Manual/Section%201100-Certification%20Periods.pdf"
+    },
+    {
+      "title": "42 CFR 435.831 Income eligibility (medically needy)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-I"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

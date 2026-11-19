@@ -1,0 +1,51 @@
+{
+  "$schema": "../schema.json",
+  "code": "MT",
+  "name": "Montana",
+  "programName": "Montana Medicaid Medically Needy",
+  "spenddownTerm": "spend down",
+  "agency": "DPHHS Office of Public Assistance",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "Your spend down (also called incurment) is a monthly amount; you have coverage for each month you meet it."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": true,
+    "description": "Meet your spend down with medical bills, or use the Cash Option and pay the amount to the state for full-month coverage, or combine both."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "With the Cash Option, coverage shows only after your payment is processed. Pay early if you have appointments.",
+    "Bills from the past 3 months are counted first, then insurance and Medicare premiums, then this month's bills.",
+    "If you paid the Cash Option but had fewer medical costs, you can ask for a refund of the difference.",
+    "Veterans who get Aid and Attendance cannot use the Cash Option."
+  ],
+  "sources": [
+    {
+      "title": "CMA 700 Medically Needy Overview - Montana DPHHS Combined Medicaid Manual",
+      "url": "https://dphhs.mt.gov/assets/hcsd/mamanual/CMA700March012017.pdf"
+    },
+    {
+      "title": "CMA 702-1 Medical Expense Option - Montana DPHHS Combined Medicaid Manual",
+      "url": "https://dphhs.mt.gov/assets/hcsd/mamanual/CMA702-1Jan012020.pdf"
+    },
+    {
+      "title": "ARM 37.82.1107 Income Eligibility, Non-Institutionalized Medically Needy",
+      "url": "https://rules.mt.gov/gateway/RuleNo.asp?RN=37.82.1107"
+    },
+    {
+      "title": "General Information for Providers Manual - Montana Medicaid",
+      "url": "https://medicaidprovider.mt.gov/manuals/generalinformationforprovidersmanual"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

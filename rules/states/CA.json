@@ -1,0 +1,47 @@
+{
+  "$schema": "../schema.json",
+  "code": "CA",
+  "name": "California",
+  "programName": "Medi-Cal with a Share of Cost (Medically Needy)",
+  "spenddownTerm": "share of cost",
+  "agency": "County social services (Medi-Cal) office",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "Your share of cost is a monthly amount; once your medical costs reach it, Medi-Cal pays for covered care the rest of that month."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Usually your doctor or pharmacy reports what you paid or owe to Medi-Cal for you. You can also show bills to your county Medi-Cal worker; old bills from before you were eligible go to the county office."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": false,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "A paid receipt counts in the month you paid it, not always the month you got care.",
+    "Care from providers who do not take Medi-Cal can still count toward your share of cost.",
+    "If a bill is bigger than your share of cost, the extra can be used in a later month.",
+    "Send proof of health insurance premiums to the county and ask them to recalculate your share of cost."
+  ],
+  "sources": [
+    {
+      "title": "Share of Cost (SOC) - Medi-Cal Provider Manual",
+      "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/file/manual?fn=share.pdf"
+    },
+    {
+      "title": "Understanding the Share of Cost for Medi-Cal - CANHR",
+      "url": "https://canhr.org/understanding-the-share-of-cost-for-medi-cal/"
+    },
+    {
+      "title": "Medi-Cal Fact Sheet: Meeting Your Share of Cost - Health Consumer Alliance",
+      "url": "https://healthconsumer.org/wp/wp-content/uploads/2017/04/fs006Geneng-SOC.pdf"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

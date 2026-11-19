@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema.json",
+  "code": "NJ",
+  "name": "New Jersey",
+  "programName": "Medically Needy Program",
+  "spenddownTerm": "spend-down",
+  "agency": "County Welfare Agency (County Board of Social Services)",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "Spend-down is figured over a six-month period, and you reapply every six months."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Give your medical bills to your County Welfare Agency. Coverage can start on the first day of the six months or on the day your bills meet the spend-down."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "To get help with older bills, ask for retroactive coverage within six months of the date you applied.",
+    "Care received before your coverage starts is generally yours to pay.",
+    "Ask your county office what bills and proof they need for each six-month period."
+  ],
+  "sources": [
+    {
+      "title": "N.J.A.C. 10:70 Medically Needy Program - NJ Department of Human Services",
+      "url": "https://www.nj.gov/humanservices/notices/documents/rules-and-regulations/NJAC%2010_70%20MEDICALLY%20NEEDY%20PROGRAM.PDF"
+    },
+    {
+      "title": "N.J.A.C. 10:49 Administration Manual - NJ Department of Human Services",
+      "url": "https://www.nj.gov/humanservices/notices/documents/rules-and-regulations/NJAC%2010_49%20ADMINISTRATION%20MANUAL.PDF"
+    },
+    {
+      "title": "42 CFR 435.831 Income eligibility (medically needy)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-I"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

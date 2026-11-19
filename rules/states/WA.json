@@ -1,0 +1,55 @@
+{
+  "$schema": "../schema.json",
+  "code": "WA",
+  "name": "Washington",
+  "programName": "Apple Health Medically Needy (Spenddown)",
+  "spenddownTerm": "spenddown",
+  "agency": "DSHS Community Services Division (Health Care Authority runs the program)",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [3, 6],
+    "description": "You choose a 3-month or 6-month base period; if you do not choose, it is 6 months."
+  },
+  "submission": {
+    "methods": ["fax", "mail", "in-person"],
+    "payIn": null,
+    "description": "Mail your bills and receipts to the DSHS Customer Service Center or bring them to your local Community Services Office. Send proof within 30 days after the base period ends."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Bills do not have to be paid to count. They must show the date of service, the provider, and what you still owe.",
+    "A statement from your insurance showing possible costs does not count as a bill.",
+    "You can ask for a separate retroactive base period covering up to 3 months before you applied.",
+    "DSHS does not pay the part of the bills used to meet your spenddown. You still owe that part."
+  ],
+  "sources": [
+    {
+      "title": "Spenddown - Washington DSHS",
+      "url": "https://www.dshs.wa.gov/esa/community-services-offices/spenddown"
+    },
+    {
+      "title": "Apple Health for the medically needy and spenddown overview - Washington HCA",
+      "url": "https://www.hca.wa.gov/free-or-low-cost-health-care/i-help-others-apply-and-access-apple-health/apple-health-medically-needy-and-spenddown-overview"
+    },
+    {
+      "title": "WAC 182-519-0110 Spenddown of excess income for the medically needy program",
+      "url": "https://apps.leg.wa.gov/wac/default.aspx?cite=182-519-0110"
+    },
+    {
+      "title": "Allowable medical expenses - Washington HCA",
+      "url": "https://www.hca.wa.gov/free-or-low-cost-health-care/i-help-others-apply-and-access-apple-health/allowable-medical-expenses"
+    },
+    {
+      "title": "Medically Needy spenddown program - WashingtonLawHelp.org",
+      "url": "https://www.washingtonlawhelp.org/en/medically-needy-spenddown-program"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "../schema.json",
+  "code": "GA",
+  "name": "Georgia",
+  "programName": "ABD Medically Needy (AMN)",
+  "spenddownTerm": "spenddown",
+  "agency": "Division of Family and Children Services (DFCS)",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "Each month is its own spenddown budget period, reviewed in six-month blocks."
+  },
+  "submission": {
+    "methods": ["upload", "mail", "in-person"],
+    "payIn": null,
+    "description": "Give your medical bills to DFCS, for example by uploading them through Georgia Gateway or a DFCS self-service kiosk. Bills for a past period must be turned in within three months after that period ends."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": false,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Bills count if still unpaid on the first of the month, or if you got the care or paid the bill that month.",
+    "To use an unpaid bill in a different month than when you got care, sign the Medically Needy Option Statement.",
+    "If you pay your own Medicare premium, it is counted first each month.",
+    "The part of a bill Medicare or other insurance should pay does not count."
+  ],
+  "sources": [
+    {
+      "title": "2150 ABD Medically Needy - Georgia DFCS Policy Manual (PAMMS)",
+      "url": "https://pamms.dhs.ga.gov/dfcs/medicaid/2150/"
+    },
+    {
+      "title": "2051 Verification - Georgia DFCS Policy Manual (PAMMS)",
+      "url": "https://pamms.dhs.ga.gov/dfcs/medicaid/2051/"
+    },
+    {
+      "title": "Aged, Blind and Disabled Medicaid fact sheet - Georgia DFCS",
+      "url": "https://dfcs.georgia.gov/document/publication/aged-blind-and-disabled-medicaid-fact-sheet/download"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

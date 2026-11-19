@@ -1,0 +1,50 @@
+{
+  "$schema": "../schema.json",
+  "code": "MN",
+  "name": "Minnesota",
+  "programName": "Medical Assistance with a Spenddown (MA-ABD)",
+  "spenddownTerm": "spenddown",
+  "agency": "County or tribal human services agency (Minnesota DHS)",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "For people who are 65+, blind or disabled, the spenddown is a monthly amount, checked month by month within a six-month renewal period."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": true,
+    "description": "Most providers bill Medical Assistance, which takes your spenddown off your first claims each month; give other bills to your county worker. You can also prepay your monthly spenddown to DHS (Client Option Spenddown) by mail or online."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "If you prepay your spenddown, DHS later compares it with what MA paid and refunds overpaid months.",
+    "You must pay providers the part of your bills that meets the spenddown; MA then pays covered care.",
+    "People using certain services, like PCA, may be able to pay their spenddown to one chosen provider."
+  ],
+  "sources": [
+    {
+      "title": "2.3.3.4 MA-ABD Medical Spenddowns - Minnesota Eligibility Policy Manual",
+      "url": "https://hcopub.dhs.state.mn.us/epm/2_3_3_4.htm"
+    },
+    {
+      "title": "2.3.3.4.1 MA-ABD Spenddown Types - Minnesota Eligibility Policy Manual",
+      "url": "https://hcopub.dhs.state.mn.us/epm/2_3_3_4_1.htm"
+    },
+    {
+      "title": "Medical Assistance: An Overview (October 2025) - Minnesota House Research",
+      "url": "https://www.house.mn.gov/hrd/pubs/ss/ssmedast.pdf"
+    },
+    {
+      "title": "Medical Assistance Spenddown Requirements and Processes (2015 report) - Minnesota DHS",
+      "url": "https://mn.gov/dhs/assets/Spenddown_Report_2015_tcm1053-165341.pdf"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

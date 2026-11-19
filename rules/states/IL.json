@@ -1,0 +1,51 @@
+{
+  "$schema": "../schema.json",
+  "code": "IL",
+  "name": "Illinois",
+  "programName": "Medicaid Spenddown (including Pay-In Spenddown)",
+  "spenddownTerm": "spenddown",
+  "agency": "IDHS Family Community Resource Center (HFS handles Pay-In payments)",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "Your spenddown is a monthly amount; you get coverage for each month you meet it."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": true,
+    "description": "Give your bills and receipts to your IDHS caseworker at the Family Community Resource Center. People who are 65+, blind or disabled and live at home can instead pay the amount to HFS (Pay-In Spenddown), or mix both, choosing each month."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": false,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Never send bills or receipts to the Pay-In Spenddown Unit. Bills go to your caseworker; payments go to HFS.",
+    "Pay-In accepts money order, cashier's check, Visa or MasterCard, not personal checks.",
+    "Unused parts of a paid receipt can be used in later months, up to six months after you paid.",
+    "Unpaid bills count if dated no earlier than six months before the month you use them."
+  ],
+  "sources": [
+    {
+      "title": "IDHS PM 15-08-15: Pay-In Spenddown",
+      "url": "https://www.dhs.state.il.us/page.aspx?item=33489"
+    },
+    {
+      "title": "IDHS PM 15-08-03: Spenddown of Excess Income and Resources",
+      "url": "https://www.dhs.state.il.us/page.aspx?item=16544"
+    },
+    {
+      "title": "HFS 591SP Medicaid Spenddown brochure",
+      "url": "https://hfs.illinois.gov/info/brochures-and-forms/brochures/hfs591sp.html"
+    },
+    {
+      "title": "Spend-down process for Medicaid (FAQ) - Illinois Legal Aid Online",
+      "url": "https://www.illinoislegalaid.org/legal-information/spend-down-process-medicaid"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

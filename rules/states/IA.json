@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema.json",
+  "code": "IA",
+  "name": "Iowa",
+  "programName": "Medically Needy Medical Assistance (Spenddown)",
+  "spenddownTerm": "spenddown",
+  "agency": "Iowa Department of Health and Human Services (HHS) income maintenance worker",
+  "period": {
+    "defaultMonths": 2,
+    "allowedMonths": [2],
+    "description": "With a spenddown you get a two-month certification period; once you meet it you have Medicaid for those two months, then you reapply."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Show your provider your Notice of Decision and ask them to send claims you owe or paid during the period to Iowa Medicaid. Old bills, and bills Medicaid will not pay, go to your HHS worker."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Tell every provider you are on the Medically Needy program so they send your claims in.",
+    "Health insurance premiums are taken off when your spenddown is figured.",
+    "Remember to reapply when each two-month certification period ends."
+  ],
+  "sources": [
+    {
+      "title": "Medically Needy Medical Assistance member booklet - Iowa HHS",
+      "url": "https://hhs.iowa.gov/media/6578"
+    },
+    {
+      "title": "Employees' Manual, Title 8, Chapter J, Medically Needy - Iowa HHS",
+      "url": "https://hhs.iowa.gov/media/12799/download"
+    },
+    {
+      "title": "Medicaid Provider Manual, All Providers Chapter II: Member Eligibility - Iowa HHS",
+      "url": "https://hhs.iowa.gov/media/10428/download?inline="
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

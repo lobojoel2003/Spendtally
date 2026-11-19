@@ -1,0 +1,51 @@
+{
+  "$schema": "../schema.json",
+  "code": "DC",
+  "name": "District of Columbia",
+  "programName": "DC Medicaid Spend Down (Medically Needy)",
+  "spenddownTerm": "spend down",
+  "agency": "DC Department of Human Services, Economic Security Administration (for DHCF)",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "For people living at home, spend down uses a one-month budget period; for long-term care it is six months."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Give your paid and unpaid medical bills to your caseworker. Send extra bills within the budget period; each should show the care, provider, patient, service date and amount you owe."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Medicare and other health insurance premiums, deductibles and co-insurance count.",
+    "Bills paid by Medicare, other insurance or Medicaid cannot be used. Each bill can be used only once.",
+    "If insurance pays part of a bill, only the part you must pay counts.",
+    "Bills for your spouse, or for a child you are responsible for, can count too."
+  ],
+  "sources": [
+    {
+      "title": "Medically Needy Spend-Down - DC Department of Health Care Finance",
+      "url": "https://dhcf.dc.gov/service/medically-needy-spend-down"
+    },
+    {
+      "title": "Spend Down: Frequently Asked Questions - DC Department of Health Care Finance",
+      "url": "https://dhcf.dc.gov/sites/default/files/dc/sites/dhcf/service_content/attachments/Spend_Down_Fact_Sheet.pdf"
+    },
+    {
+      "title": "Non-MAGI Spend Down Notice - DC DHCF",
+      "url": "https://dhcf.dc.gov/sites/default/files/dc/sites/dhcf/documents/%2316%20Non%20MAGI%20Spend%20Down%20Notice.pdf"
+    },
+    {
+      "title": "D.C. Medicaid and Spend-Down Eligibility brochure - DC DHS",
+      "url": "https://dhs.dc.gov/sites/default/files/dc/sites/dhs/publication/attachments/Spenddown_Brochure_english.pdf"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

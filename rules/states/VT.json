@@ -1,0 +1,47 @@
+{
+  "$schema": "../schema.json",
+  "code": "VT",
+  "name": "Vermont",
+  "programName": "Medicaid with a Spenddown",
+  "spenddownTerm": "spenddown",
+  "agency": "Department of Vermont Health Access (DVHA)",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "If you live at home, you get six months to meet your spenddown, starting the first of the month you apply."
+  },
+  "submission": {
+    "methods": ["upload", "fax", "mail"],
+    "payIn": null,
+    "description": "Tell DVHA about your medical costs and send proof: upload with the online Document Uploader, fax, or mail to the Application and Document Processing Center in Waterbury."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": false,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Unpaid bills you still owe count, and so do bills you paid during the six-month period.",
+    "Health insurance premiums count toward the spenddown.",
+    "No medical bill can be used more than once.",
+    "About five business days after sending papers, call 1-855-899-9600 to check they arrived."
+  ],
+  "sources": [
+    {
+      "title": "Medicaid Spenddowns - Vermont Health Connect",
+      "url": "https://info.healthconnect.vermont.gov/compare-plans/medicaid-and-dr-dynasaur/medicaid-spenddowns"
+    },
+    {
+      "title": "Need to send us documents? - DVHA Document Uploader",
+      "url": "https://dvha.vermont.gov/members/vermont-medicaid-programs/document-uploader"
+    },
+    {
+      "title": "4400 Spenddown, Patient Share, and Resource Transfer - Vermont Medicaid rules",
+      "url": "https://humanservices.vermont.gov/sites/ahsnew/files/document(13).pdf"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

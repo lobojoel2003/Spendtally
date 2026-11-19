@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema.json",
+  "code": "ND",
+  "name": "North Dakota",
+  "programName": "Medically Needy Medicaid (Recipient Liability)",
+  "spenddownTerm": "recipient liability",
+  "agency": "Human service zone office (North Dakota HHS)",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "Recipient liability (also called client share) is a monthly amount, like a monthly deductible, that you must pay toward care before Medicaid pays."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Providers bill Medicaid and your monthly recipient liability is applied to those claims. Send proof of other medical bills, and of insurance or Medicare premiums, to your human service zone office."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": null,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Health insurance or Medicare premiums can lower your monthly amount; send proof to your human service zone.",
+    "Providers cannot make you pay your recipient liability at the time of service, except at pharmacies.",
+    "If you do not meet your liability for six months in a row, your coverage ends the next month."
+  ],
+  "sources": [
+    {
+      "title": "Recipient Liability - North Dakota Medicaid Billing and Policy Manual",
+      "url": "https://www.hhs.nd.gov/sites/default/files/documents/medicaid-policies/recipient-liability.pdf"
+    },
+    {
+      "title": "N.D. Admin. Code Chapter 75-02-02.1 Eligibility for Medicaid",
+      "url": "https://ndlegis.gov/prod/acdata/pdf/75-02-02.1.pdf"
+    },
+    {
+      "title": "Recipient Eligibility - North Dakota Medicaid Billing and Policy Manual",
+      "url": "https://www.hhs.nd.gov/sites/www/files/documents/medicaid-policies/member-eligibility.pdf"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

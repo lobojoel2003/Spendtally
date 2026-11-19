@@ -1,0 +1,47 @@
+{
+  "$schema": "../schema.json",
+  "code": "VA",
+  "name": "Virginia",
+  "programName": "Cardinal Care Medically Needy Spenddown",
+  "spenddownTerm": "spenddown",
+  "agency": "Local Department of Social Services (LDSS)",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "If you do not get long-term care, your spenddown runs for six months; coverage starts the day your bills reach the amount and lasts until the six months end."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Send proof of your medical bills to your local Department of Social Services. Bills should show what insurance paid and what you still owe."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": true,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Health insurance premiums, including Medicare premiums, count toward the spenddown.",
+    "Paid bills count only if the care was during your six-month period. Old bills you still owe can count.",
+    "Medicaid will not pay bills from before the day you met your spenddown.",
+    "At the end of the six months, you must apply again to be checked for a new period."
+  ],
+  "sources": [
+    {
+      "title": "Cardinal Care Fact Sheet: Medically Needy Spenddown (June 2025) - Virginia DMAS",
+      "url": "https://coverva.dmas.virginia.gov/media/gd1n3kyy/fact-sheet-spend-down-060125.pdf"
+    },
+    {
+      "title": "12VAC30-40-130 Handling of excess income; spend-down",
+      "url": "https://law.lis.virginia.gov/admincode/title12/agency30/chapter40/section130/"
+    },
+    {
+      "title": "Provider Manual Chapter III: Member Eligibility (March 2025) - Virginia DMAS",
+      "url": "https://vamedicaid.dmas.virginia.gov/sites/default/files/2025-03/Chapter%20III%20(updated%203.13.25)_Final.pdf"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

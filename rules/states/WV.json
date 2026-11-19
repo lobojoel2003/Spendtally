@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema.json",
+  "code": "WV",
+  "name": "West Virginia",
+  "programName": "Medically Needy Medicaid (Spenddown)",
+  "spenddownTerm": "spenddown",
+  "agency": "West Virginia Department of Human Services (DoHS) local office",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "Your income and bills are counted over a six-month period of consideration; once you meet the spenddown, your card runs to the end of those six months."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Bring or send your medical bills to your local DoHS office, whether or not you have paid them. Bring bills in even if you are not sure they count."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Health insurance premiums, including Medicare, count toward the spenddown.",
+    "Any part of a bill paid by Medicare or other insurance does not count.",
+    "Coverage can go back up to three months before the month you applied."
+  ],
+  "sources": [
+    {
+      "title": "OFS-6A Medicaid spenddown information form - WV DHHR",
+      "url": "https://dhhr.wv.gov/bcf/Services/familyassistance/Documents/236/OFS_6A.pdf"
+    },
+    {
+      "title": "Chapter 16.4 Specific Medicaid Requirements - WV Income Maintenance Manual",
+      "url": "https://dhhr.wv.gov/bcf/Services/familyassistance/PolicyManual/Documents/Chapter%2016/ch16_4%20.pdf"
+    },
+    {
+      "title": "Your Guide to Medicaid 2026 - WV Bureau for Medical Services",
+      "url": "https://bms.wv.gov/media/41130/download?inline="
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

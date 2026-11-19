@@ -1,0 +1,47 @@
+{
+  "$schema": "../schema.json",
+  "code": "MO",
+  "name": "Missouri",
+  "programName": "MO HealthNet Spend Down",
+  "spenddownTerm": "spend down",
+  "agency": "Family Support Division (Missouri Department of Social Services)",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "Your spend down is a monthly amount; you only have coverage in months you meet it."
+  },
+  "submission": {
+    "methods": ["upload", "email", "fax", "mail"],
+    "payIn": true,
+    "description": "Each month you can either pay your spend down to MO HealthNet (online, by mail, or automatic bank withdrawal) or send medical bills with the Spend Down Participant Form. You can switch methods month to month."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": false,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": null,
+    "retroactiveMonths": null
+  },
+  "notes": [
+    "Paying online is fastest: coverage starts the day after your payment.",
+    "Bills from this month or the 3 months before can be carried over to this month or the next 3 months.",
+    "Send bills showing what you still owe after Medicare or other insurance paid. You still owe the provider.",
+    "You can send bills for care from up to one year (365 days) ago."
+  ],
+  "sources": [
+    {
+      "title": "Spend Down - myDSS (Missouri Department of Social Services)",
+      "url": "https://mydss.mo.gov/spend-down"
+    },
+    {
+      "title": "Spend Down FAQs - myDSS",
+      "url": "https://mydss.mo.gov/mhd/spend-down-faqs"
+    },
+    {
+      "title": "0810.010.20.17 Combination of Incurred Medical Expenses and Pay-In - Missouri DSS manual",
+      "url": "https://dssmanuals.mo.gov/mo-healthnet-for-the-aged-blind-and-disabled/0810-000-00/0810-010-00/0810-010-20/0810-010-20-17/"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

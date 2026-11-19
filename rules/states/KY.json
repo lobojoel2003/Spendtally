@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema.json",
+  "code": "KY",
+  "name": "Kentucky",
+  "programName": "Medicaid Spend-down (Medically Needy)",
+  "spenddownTerm": "spend-down",
+  "agency": "Department for Community Based Services (DCBS)",
+  "period": {
+    "defaultMonths": 3,
+    "allowedMonths": [3],
+    "description": "Your spend-down is figured over a three-month period; coverage starts on the day your bills use up your extra income."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Bring or send your medical bills to your DCBS caseworker. Proof that you owe a bill is enough; you do not have to have paid it."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Health insurance premiums, doctor visits and prescriptions you pay can count.",
+    "Old bills count only if still unpaid at the start of the three-month period and not used before.",
+    "The exact day you meet your spend-down is the day your coverage starts."
+  ],
+  "sources": [
+    {
+      "title": "907 KAR 20:005 Medicaid technical eligibility and income - Kentucky Administrative Regulations",
+      "url": "https://apps.legislature.ky.gov/law/kar/titles/907/020/005/"
+    },
+    {
+      "title": "Division of Family Support Operation Manual Volume IVA - Kentucky CHFS",
+      "url": "https://www.chfs.ky.gov/agencies/dcbs/dfs/Documents/OMVOLIVA.pdf"
+    },
+    {
+      "title": "Medicaid Spend-down - kyjustice.org (Kentucky legal aid self-help site)",
+      "url": "http://www.kyjustice.org/node/1216"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

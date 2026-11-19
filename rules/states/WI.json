@@ -1,0 +1,51 @@
+{
+  "$schema": "../schema.json",
+  "code": "WI",
+  "name": "Wisconsin",
+  "programName": "Medicaid Deductible (Elderly, Blind, or Disabled)",
+  "spenddownTerm": "deductible",
+  "agency": "Local income maintenance (IM) agency",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "Your deductible covers six months in a row; it can start up to three months before the month you apply."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": true,
+    "description": "Give proof of your medical bills to your income maintenance agency. You (or anyone) can also prepay the deductible, all at once or in parts; if fully paid, coverage starts on the first day of the period."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Unpaid bills and recently paid bills both count. Health insurance premiums count too.",
+    "Once you meet the deductible, Medicaid pays covered care until the six months end.",
+    "Bills written off in bankruptcy, or paid by insurance, do not count.",
+    "If you prepay and your check bounces, you lose eligibility."
+  ],
+  "sources": [
+    {
+      "title": "24.3 Deductible Period - Wisconsin Medicaid Eligibility Handbook (EBD)",
+      "url": "https://www.emhandbooks.wisconsin.gov/meh-ebd/policy_files/24/24.3.htm"
+    },
+    {
+      "title": "24.7 Meeting the Deductible - Wisconsin Medicaid Eligibility Handbook (EBD)",
+      "url": "https://www.emhandbooks.wisconsin.gov/meh-ebd/policy_files/24/24.7.htm"
+    },
+    {
+      "title": "Information About Your Enrollment and Benefits (P-00079) - Wisconsin DHS",
+      "url": "https://www.dhs.wisconsin.gov/publications/p0/p00079.pdf"
+    },
+    {
+      "title": "Your Deductible Balance Changed letter - Wisconsin DHS",
+      "url": "https://www.dhs.wisconsin.gov/medicaid/deductibles-newbalanceletter.pdf"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

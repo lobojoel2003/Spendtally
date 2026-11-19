@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema.json",
+  "code": "LA",
+  "name": "Louisiana",
+  "programName": "Spend-Down Medically Needy Program (MNP)",
+  "spenddownTerm": "spend-down",
+  "agency": "Louisiana Department of Health (LDH) Medicaid",
+  "period": {
+    "defaultMonths": 3,
+    "allowedMonths": [3],
+    "description": "Spend-down coverage for people living at home lasts no more than three months, starting no earlier than the day you meet the spend-down."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Give your medical bills to Louisiana Medicaid. Bills are applied oldest first, and hospital bills are used before doctor bills."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": null,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Unpaid bills generally must be for care within three months before the month you applied.",
+    "Health insurance premiums, such as Medicare, are subtracted from your income first.",
+    "Home and community-based waiver spend-down has different, longer periods; ask LDH."
+  ],
+  "sources": [
+    {
+      "title": "H-1000 Medically Needy Program (MNP) - Louisiana Medicaid Eligibility Manual",
+      "url": "https://ldh.la.gov/assets/medicaid/MedicaidEligibilityPolicy/H-1000.pdf"
+    },
+    {
+      "title": "H-1030 Spend-Down Medically Needy - SSI-related - Louisiana Medicaid Eligibility Manual",
+      "url": "https://ldh.la.gov/assets/medicaid/MedicaidEligibilityPolicy/H-1030.pdf"
+    },
+    {
+      "title": "H-1020 Regular and Spend-Down Medically Needy - Louisiana Medicaid Eligibility Manual",
+      "url": "https://ldh.la.gov/assets/medicaid/MedicaidEligibilityPolicy/H-1020m.pdf"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

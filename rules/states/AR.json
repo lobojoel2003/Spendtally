@@ -1,0 +1,50 @@
+{
+  "$schema": "../schema.json",
+  "code": "AR",
+  "name": "Arkansas",
+  "programName": "AABD Medically Needy Spend-Down",
+  "spenddownTerm": "spend-down",
+  "agency": "Arkansas DHS county office (Division of County Operations)",
+  "period": {
+    "defaultMonths": 3,
+    "allowedMonths": [3],
+    "description": "Your spend-down covers three calendar months, and you must re-enroll every three months."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Give your medical bills to your DHS county office so they can be subtracted from your extra income for the three-month period."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Your three-month spend-down period can start in one of the three months before you applied.",
+    "Spend-down coverage is listed as a limited benefit; ask your county office what it covers.",
+    "Remember to re-enroll every three months to keep coverage."
+  ],
+  "sources": [
+    {
+      "title": "Medicaid Quick Reference Chart - Arkansas DHS",
+      "url": "https://humanservices.arkansas.gov/divisions-shared-services/county-operations/medicaid-quick-reference-chart/"
+    },
+    {
+      "title": "Medical Services Policy Manual - Arkansas DHS",
+      "url": "https://humanservices.arkansas.gov/wp-content/uploads/Medical_Services_Policy_Manual.pdf"
+    },
+    {
+      "title": "Beneficiary Aid Category List - Arkansas DHS",
+      "url": "https://humanservices.arkansas.gov/wp-content/uploads/AidCategories.doc"
+    },
+    {
+      "title": "42 CFR 435.831 Income eligibility (medically needy)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-I"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

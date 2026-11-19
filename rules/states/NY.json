@@ -1,0 +1,55 @@
+{
+  "$schema": "../schema.json",
+  "code": "NY",
+  "name": "New York",
+  "programName": "Medicaid Excess Income Program (Spenddown / Surplus)",
+  "spenddownTerm": "spenddown",
+  "agency": "Local Department of Social Services (HRA in New York City)",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1, 6],
+    "description": "Your spenddown is figured one month at a time, but you can meet several months at once (up to six) with enough bills or a pay-in."
+  },
+  "submission": {
+    "methods": ["fax", "mail", "in-person"],
+    "payIn": true,
+    "description": "Bring, mail or fax your bills to your local Medicaid office (in NYC, fax to the HRA Surplus Unit with form MAP-931y). Or use the Pay-In program and pay the spenddown to the office, up to six months at a time."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": true,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": true,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Unpaid bills you still owe can count, even old ones, as long as the provider can still collect them.",
+    "You still owe your providers the part of the bills used to meet your spenddown.",
+    "Hospital stays: you must meet six months' worth of spenddown before Medicaid pays an inpatient bill.",
+    "For applications from January 2027, federal law cuts retroactive coverage for age 65+, blind and disabled to two months."
+  ],
+  "sources": [
+    {
+      "title": "Medicaid Excess Income (Spenddown or Surplus Income) Program - NY Department of Health",
+      "url": "https://www.health.ny.gov/health_care/medicaid/excess_income.htm"
+    },
+    {
+      "title": "MAP-931y Surplus Fax Medical Bills cover sheet - NYC HRA",
+      "url": "https://www.nyc.gov/assets/hra/downloads/pdf/MAP-931y-E-Surplus-Fax-Medical-Bills.pdf"
+    },
+    {
+      "title": "Medicaid Spend-Down - NY Health Access",
+      "url": "https://nyhealthaccess.org/entry/46/"
+    },
+    {
+      "title": "Best Practices for Medicaid Spenddown - Community Service Society Benefits Plus",
+      "url": "https://bplc.cssny.org/files/attachment/d68a9d7d-821b-4ae3-95ae-d09553c2fa11/Best%20Practices%20for%20Medicaid%20Spenddown.pdf"
+    },
+    {
+      "title": "Spend-down program for beneficiaries with incomes over the Medicaid limit - Medicare Interactive",
+      "url": "https://www.medicareinteractive.org/understanding-medicare/cost-saving-programs/medicare-and-medicaid/spend-down-program-for-beneficiaries-with-incomes-over-the-medicaid-limit"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

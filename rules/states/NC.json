@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema.json",
+  "code": "NC",
+  "name": "North Carolina",
+  "programName": "Medicaid with a Deductible (M-AABD Medically Needy)",
+  "spenddownTerm": "deductible",
+  "agency": "County Department of Social Services (DSS)",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "Your deductible is figured for a six-month certification period: your extra monthly income times six."
+  },
+  "submission": {
+    "methods": ["upload", "fax", "mail", "in-person"],
+    "payIn": null,
+    "description": "Give your bills to your county DSS in person, by mail or fax, or through ePASS if your account is linked. When DSS asks for bills, you have 30 days to respond."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Health insurance premiums and costs Medicaid does not cover can count toward your deductible.",
+    "Unpaid bills from before your current period can count; your worker records how much is applied.",
+    "You must meet a new deductible every six months."
+  ],
+  "sources": [
+    {
+      "title": "MA-2360 Medicaid Deductible - NC Medicaid Aged, Blind and Disabled Manual",
+      "url": "https://policies.ncdhhs.gov/wp-content/uploads/ma-2360-Medicaid-Deductible-1.pdf"
+    },
+    {
+      "title": "MA-3420 - NC Medicaid manual",
+      "url": "https://policies.ncdhhs.gov/wp-content/uploads/MA-3420-.pdf"
+    },
+    {
+      "title": "Medicaid Recertification - NC Medicaid",
+      "url": "https://medicaid.ncdhhs.gov/medicaid-recertification"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

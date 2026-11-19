@@ -1,0 +1,51 @@
+{
+  "$schema": "../schema.json",
+  "code": "KS",
+  "name": "Kansas",
+  "programName": "KanCare Medically Needy (Spenddown)",
+  "spenddownTerm": "spenddown",
+  "agency": "KanCare Clearinghouse (Kansas Department of Health and Environment)",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "Medically Needy uses a six-month base period; once your bills reach the spenddown, you have coverage for the rest of it."
+  },
+  "submission": {
+    "methods": ["mail", "fax"],
+    "payIn": null,
+    "description": "List your bills on the spenddown claims form (ES-3170), one form per provider, and mail or fax it to the KanCare Clearinghouse. Providers can also send bills for you."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Premiums you pay for health insurance and Medicare can count, and so can rides to medical care.",
+    "Older bills count only for the amount you still owed on the first day of the base period.",
+    "Bills you use for the spenddown are still yours to pay.",
+    "Keep your fax confirmation page in case the Clearinghouse needs it."
+  ],
+  "sources": [
+    {
+      "title": "7330 Eligibility Periods - Kansas Economic and Employment Services Manual (KEESM)",
+      "url": "https://khap.kdhe.ks.gov/KEESM/July_2023_Output/keesm7330.htm"
+    },
+    {
+      "title": "Spenddown Process training manual - KDHE",
+      "url": "https://khap.kdhe.ks.gov/kfmam/trainingDocs/ILTrainingAcademy/ILTrainingAcademyManual/53SpenddownProcess.pdf"
+    },
+    {
+      "title": "KanCare member documents (spenddown claims form and Clearinghouse contacts)",
+      "url": "https://kancare.ks.gov/home/showpublisheddocument/3114/638476868541800000"
+    },
+    {
+      "title": "KMAP Member FAQ",
+      "url": "https://portal.kmap-state-ks.us/PublicPage/Public/MemberFAQ"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "../schema.json",
+  "code": "CT",
+  "name": "Connecticut",
+  "programName": "HUSKY C Medicaid with a Spend-Down",
+  "spenddownTerm": "spend-down",
+  "agency": "Department of Social Services (DSS)",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "Your spend-down covers a six-month period; your notice lists the amount and the dates."
+  },
+  "submission": {
+    "methods": ["mail", "fax", "in-person"],
+    "payIn": null,
+    "description": "Send bills with the Spend-down FastLink cover sheet to the DSS ConneCT Scanning Center by mail. Providers can fax bills for you."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": true,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Unpaid bills you still owe can count, no matter how old.",
+    "Bills you already paid only count if the care was in your current six-month period.",
+    "Health insurance premiums, co-pays and deductibles count.",
+    "Send final bills, not estimates, and keep copies of everything you send."
+  ],
+  "sources": [
+    {
+      "title": "Medicaid Spend Down Information and Forms - CT DSS",
+      "url": "https://portal.ct.gov/dss/common-elements/medicaid-spend-down-information-and-forms"
+    },
+    {
+      "title": "The Spend-Down Process brochure - CT DSS",
+      "url": "https://portal.ct.gov/-/media/Departments-and-Agencies/DSS/Brochures/Medical-Medicaid-Medicare/spndown.pdf"
+    },
+    {
+      "title": "The Income Spenddown Process in Connecticut's Medicaid Program - CT Office of Legislative Research (2022-R-0136)",
+      "url": "https://www.cga.ct.gov/2022/rpt/pdf/2022-R-0136.pdf"
+    },
+    {
+      "title": "Are You Eligible For HUSKY Health Insurance? - CTLawHelp",
+      "url": "https://ctlawhelp.org/are-you-eligible-for-medicaid"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "../schema.json",
+  "code": "MI",
+  "name": "Michigan",
+  "programName": "Medicaid with a Deductible (Group 2 Medicaid)",
+  "spenddownTerm": "deductible",
+  "agency": "Michigan Department of Health and Human Services (MDHHS) local office",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "Your deductible is a monthly amount; each calendar month is a separate deductible period."
+  },
+  "submission": {
+    "methods": ["upload", "in-person"],
+    "payIn": null,
+    "description": "Report your medical costs every month by uploading them to your MI Bridges account or returning them to your local MDHHS office."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": true,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Paid bills only count for the month you got the care. Unpaid bills can be used for any month.",
+    "Your worker uses your oldest unpaid bills first, and each bill can only be used once.",
+    "Bills or receipts should show the date of service, the amount owed or paid, and who got the care.",
+    "You do not have to pay a bill before you report it."
+  ],
+  "sources": [
+    {
+      "title": "BEM 545 MA Group 2 Income Eligibility - MDHHS Bridges Eligibility Manual",
+      "url": "https://mdhhs-pres-prod.michigan.gov/olmweb/ex/BP/Public/BEM/545.pdf"
+    },
+    {
+      "title": "Medicaid Deductible questions and answers - MDHHS",
+      "url": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder40/617_medicaid_decuct.pdf?rev=0479458bf2a5465ebd87079616624de8"
+    },
+    {
+      "title": "An Overview of Medicaid - Michigan Legal Help",
+      "url": "https://michiganlegalhelp.org/resources/public-assistance/overview-of-medicaid"
+    },
+    {
+      "title": "42 CFR 435.831 Income eligibility (medically needy)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-I"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

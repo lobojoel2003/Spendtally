@@ -1,0 +1,43 @@
+{
+  "$schema": "../schema.json",
+  "code": "RI",
+  "name": "Rhode Island",
+  "programName": "Community Medicaid Medically Needy (Spenddown)",
+  "spenddownTerm": "spenddown",
+  "agency": "Rhode Island Department of Human Services (for EOHHS Medicaid)",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "Your spenddown is figured for a six-month period starting the first of the month you apply, and again at each renewal."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Keep your medical bills and receipts and give them to the state agency (or have your provider send them). Medicaid covers you once your allowed costs reach the six-month spenddown."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Paid and unpaid bills from the current period count, and unpaid older bills can count too.",
+    "Health insurance premiums, co-pays and deductibles count, but not premiums Medicaid already pays.",
+    "The part of a bill used for one spenddown cannot be used again later.",
+    "Home nursing or homemaker costs usually need approval first from an eligibility worker."
+  ],
+  "sources": [
+    {
+      "title": "Community Medicaid: Medically Needy Eligibility (210-RICR-40-05-2)",
+      "url": "https://rules.sos.ri.gov/Regulations/part/210-40-05-2"
+    },
+    {
+      "title": "RI Medicaid Provider Reference Manual: General Guidelines - EOHHS",
+      "url": "https://eohhs.ri.gov/sites/g/files/xkgbur226/files/Portals/0/Uploads/Documents/MA-Providers/MA-Reference-Guides/General-Guidelines/General_Guidelines.pdf"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

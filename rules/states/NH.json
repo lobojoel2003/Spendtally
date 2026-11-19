@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema.json",
+  "code": "NH",
+  "name": "New Hampshire",
+  "programName": "In and Out Medical Assistance (Spenddown)",
+  "spenddownTerm": "spenddown",
+  "agency": "NH DHHS District Office",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [1, 6],
+    "description": "You choose a one-month or six-month spenddown period; to switch later you must reapply."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Send or bring proof of your medical bills to your DHHS District Office. When your spenddown is met, the office gives or mails you a spenddown log."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Current or past unpaid bills can count. The unused part of a bill can carry over to a later period.",
+    "Health insurance premiums, including Medicare Part B, count.",
+    "Report changes to DHHS within 10 days."
+  ],
+  "sources": [
+    {
+      "title": "625 In and Out Medical Assistance - NH DHHS Adult Assistance Manual",
+      "url": "https://www.dhhs.nh.gov/aam_htm/html/625_in_and_out_medical_assistance_aam.htm"
+    },
+    {
+      "title": "625.05 Allowable Medical Expenses - NH DHHS Adult Assistance Manual",
+      "url": "https://www.dhhs.nh.gov/aam_htm/html/625_05_allowable_medical_expenses_aam.htm"
+    },
+    {
+      "title": "In and Out Medical Assistance information (form 77J) - NH EASY",
+      "url": "https://nheasy.nh.gov/forms/E/77J.pdf"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

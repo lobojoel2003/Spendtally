@@ -1,0 +1,50 @@
+{
+  "$schema": "../schema.json",
+  "code": "ME",
+  "name": "Maine",
+  "programName": "MaineCare Medically Needy (Deductible / Spenddown)",
+  "spenddownTerm": "deductible",
+  "agency": "Maine DHHS Office for Family Independence (eligibility office)",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "Your deductible (spenddown) is set for a six-month period; when that period ends you must reapply for a new one."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Give your medical bills to your MaineCare eligibility worker. When they add up to your deductible, MaineCare covers you for the rest of the six months."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "You do not have to pay a bill before it counts. Tell your worker about old unpaid bills too.",
+    "Any part of a bill that Medicare pays does not count toward your deductible.",
+    "Free care a hospital gives you can count toward your deductible."
+  ],
+  "sources": [
+    {
+      "title": "MaineCare Deductible: How Does it Work? - Pine Tree Legal Assistance",
+      "url": "https://www.ptla.org/mainecare-deductible-how-does-it-work"
+    },
+    {
+      "title": "MaineCare Member Handbook (November 2025) - Maine DHHS",
+      "url": "https://www.maine.gov/dhhs/sites/maine.gov.dhhs/files/inline-files/mainecare-member-handbook.pdf"
+    },
+    {
+      "title": "Older Adults and Adults with Disabilities - MaineCare",
+      "url": "https://www.maine.gov/dhhs/oms/mainecare-options/older-adults-and-adults-with-disabilities"
+    },
+    {
+      "title": "42 CFR 435.831 Income eligibility (medically needy)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-I"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

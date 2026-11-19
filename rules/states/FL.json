@@ -1,0 +1,51 @@
+{
+  "$schema": "../schema.json",
+  "code": "FL",
+  "name": "Florida",
+  "programName": "Medically Needy Program",
+  "spenddownTerm": "share of cost",
+  "agency": "Department of Children and Families (DCF)",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "Your share of cost is a monthly amount; you are covered from the day your bills reach it until the end of that month."
+  },
+  "submission": {
+    "methods": ["upload", "fax", "mail", "in-person"],
+    "payIn": null,
+    "description": "Upload your medical bills through your MyACCESS account, fax them, mail them, or drop them off at a DCF Family Resource Center. Put your name and case number on each bill."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": false,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Coverage starts on the day you meet your share of cost, not the first of the month.",
+    "A bill used to meet your share of cost in one month cannot be used again in another month.",
+    "The part of a bill paid by Medicare or other insurance does not count.",
+    "Paid bills count if paid this month or in the three months before."
+  ],
+  "sources": [
+    {
+      "title": "Medically Needy Program handout - Florida DCF",
+      "url": "https://www.myflfamilies.com/documents/59546.pdf"
+    },
+    {
+      "title": "SSI-Related Medicaid Program Fact Sheet - Florida DCF",
+      "url": "https://www.myflfamilies.com/documents/59481.pdf"
+    },
+    {
+      "title": "Rule 65A-1.707, Florida Administrative Code",
+      "url": "https://flrules.org/gateway/readFile.asp?sid=2&tid=5196113&type=1&File=65A-1.707.htm"
+    },
+    {
+      "title": "ESS Program Policy Manual, Chapter 2000 Coverage Groups - Florida DCF",
+      "url": "https://ffic.myflfamilies.com/manual/2000.pdf"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "../schema.json",
+  "code": "UT",
+  "name": "Utah",
+  "programName": "Spenddown Program (Medically Needy)",
+  "spenddownTerm": "spenddown",
+  "agency": "Department of Workforce Services (DWS) for Utah Medicaid",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "Your spenddown is a monthly amount you meet before Medicaid pays for that month."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": true,
+    "description": "Pay your spenddown to DWS (by phone, online through myCase, or by mail), or give your worker medical bills to use against it. Bills must be complete provider statements showing what you still owe."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": null,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Pay the exact spenddown amount. DWS takes check, money order, debit or credit card.",
+    "A bill cannot be used before you get the service, and a bill used once usually cannot be used again.",
+    "Only the part of a bill you still owe after insurance counts.",
+    "Not every Utah Medicaid program allows a spenddown; ask DWS which program you are in."
+  ],
+  "sources": [
+    {
+      "title": "Spenddown Program (Medically Needy) - Utah Medicaid",
+      "url": "https://medicaid.utah.gov/spenddown-program-medically-needy/"
+    },
+    {
+      "title": "Medicaid Spenddown handout - Utah Medicaid",
+      "url": "https://medicaid-documents.dhhs.utah.gov/Documents/pdfs/Medicaid_Spenddown.pdf"
+    },
+    {
+      "title": "461 Spenddown Medicaid - Utah Medicaid Policy Manual",
+      "url": "https://bepmanuals.health.utah.gov/Medicaidpolicy/400/461_Spenddown_Medicaid.htm"
+    },
+    {
+      "title": "461-5 Spenddown with Medical Bills - Utah Medicaid Policy Manual",
+      "url": "https://bepmanuals.health.utah.gov/Medicaidpolicy/400/461-5_Spenddown_with_Medical_Bills.htm"
+    },
+    {
+      "title": "Contact - Utah Medicaid",
+      "url": "https://medicaid.utah.gov/CONTACT/"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "high"
+}

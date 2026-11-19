@@ -1,0 +1,50 @@
+{
+  "$schema": "../schema.json",
+  "code": "NE",
+  "name": "Nebraska",
+  "programName": "Medically Needy Medicaid (Share of Cost)",
+  "spenddownTerm": "share of cost",
+  "agency": "Nebraska Department of Health and Human Services (DHHS)",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "Your share of cost is a monthly amount; each month is decided on its own."
+  },
+  "submission": {
+    "methods": ["mail"],
+    "payIn": null,
+    "description": "DHHS mails you a share of cost form each month for your providers to fill out and sign. The provider who gives the care that meets your share of cost sends in the form."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": null,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Any medically needed service or supply counts, even if Medicaid would not cover it.",
+    "If you do not meet your share of cost in a month, Medicaid pays no bills for that month.",
+    "To be considered for Medically Needy, say so in the comments section of your Medicaid application."
+  ],
+  "sources": [
+    {
+      "title": "Medically Needy & Share of Cost - Nebraska DHHS",
+      "url": "https://dhhs.ne.gov/Pages/Share-of-Cost.aspx"
+    },
+    {
+      "title": "Share of Cost Brochure - Nebraska DHHS",
+      "url": "https://dhhs.ne.gov/Documents/Share%20of%20Cost%20Brochure.pdf"
+    },
+    {
+      "title": "Medicaid Share of Cost provisions - Nebraska DHHS guidance",
+      "url": "https://dhhs.ne.gov/Guidance%20Docs/Share%20of%20Cost%20Provisions.pdf"
+    },
+    {
+      "title": "42 CFR 435.831 Income eligibility (medically needy)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-I"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

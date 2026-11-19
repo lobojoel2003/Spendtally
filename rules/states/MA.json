@@ -1,0 +1,47 @@
+{
+  "$schema": "../schema.json",
+  "code": "MA",
+  "name": "Massachusetts",
+  "programName": "MassHealth Standard with a Deductible",
+  "spenddownTerm": "deductible",
+  "agency": "MassHealth (Executive Office of Health and Human Services)",
+  "period": {
+    "defaultMonths": 6,
+    "allowedMonths": [6],
+    "description": "Your deductible covers a six-month period and equals six months of your extra income; you meet it again every six months."
+  },
+  "submission": {
+    "methods": ["mail", "fax"],
+    "payIn": null,
+    "description": "Send copies of medical bills that add up to your deductible to MassHealth. Forms list the Health Insurance Processing Center in Taunton by mail or fax; call MassHealth to confirm where to send deductible bills."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": false,
+    "unpaidBillsCarryForward": true,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "Unpaid bills you still owe count. Paid bills count if you paid them during the six-month period.",
+    "Health insurance premiums, including Medicare, count first toward the deductible.",
+    "Bills you use to meet the deductible are yours to pay; MassHealth will not pay them.",
+    "Each bill should show the provider, the service and the date. For paid bills, include a receipt or canceled check."
+  ],
+  "sources": [
+    {
+      "title": "130 CMR 520.000 MassHealth Financial Eligibility (520.028-520.031 deductible)",
+      "url": "https://www.mass.gov/doc/130-cmr-520000-masshealth-financial-eligibility-0/download"
+    },
+    {
+      "title": "Health Coverage Mail/Fax Cover Sheet (HC-CS) - MassHealth",
+      "url": "https://www.mass.gov/doc/masshealth-health-coverage-mailfax-cover-sheet-0/download"
+    },
+    {
+      "title": "Member Booklet for Health and Dental Coverage - MassHealth",
+      "url": "https://www.mass.gov/doc/member-booklet-for-health-and-dental-coverage-and-help-paying-costs-0/download"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "medium"
+}

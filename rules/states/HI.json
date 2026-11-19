@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema.json",
+  "code": "HI",
+  "name": "Hawaii",
+  "programName": "Med-QUEST Medically Needy Spend-Down",
+  "spenddownTerm": "spend-down",
+  "agency": "Med-QUEST Division, Hawaii Department of Human Services",
+  "period": {
+    "defaultMonths": 1,
+    "allowedMonths": [1],
+    "description": "Spend-down is checked month by month; you are enrolled once your medical costs for the month reach your spend-down amount."
+  },
+  "submission": {
+    "methods": ["mail", "in-person"],
+    "payIn": null,
+    "description": "Give proof of your medical costs to your Med-QUEST eligibility office. How bills are sent and counted was not confirmed; ask your eligibility worker."
+  },
+  "rules": {
+    "paidBillsServiceMonthOnly": null,
+    "unpaidBillsCarryForward": null,
+    "unpaidMedicaidProviderOneMonth": null,
+    "premiumsCount": true,
+    "retroactiveMonths": 3
+  },
+  "notes": [
+    "There is no top income limit for people who are 65+, blind or disabled to use spend-down.",
+    "If you need spend-down only for past months, you get care paid fee-for-service instead of joining a health plan.",
+    "If your spend-down is large, Hawaii may set an enrollment fee equal to it. Ask Med-QUEST how this works for you."
+  ],
+  "sources": [
+    {
+      "title": "HAR 17-1730.1 Medically Needy Spenddown (unofficial copy) - Hawaii DHS",
+      "url": "https://humanservices.hawaii.gov/wp-content/uploads/2013/10/HAR-17-1730.1-MEDICALLY-NEEDY-SPENDDOWN-06.06.13-Final-kmney.pdf"
+    },
+    {
+      "title": "QUEST Integration Section 1115 Demonstration Special Terms and Conditions - Med-QUEST",
+      "url": "https://medquest.hawaii.gov/content/dam/formsanddocuments/med-quest/section-1115-demonstration-renewal-for-2024/Attachment_D_Current_1115_Waiver_Demonstration_Terms_and_Conditions.pdf"
+    },
+    {
+      "title": "42 CFR 435.831 Income eligibility (medically needy)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-I"
+    }
+  ],
+  "lastReviewed": "2026-11-19",
+  "confidence": "low"
+}

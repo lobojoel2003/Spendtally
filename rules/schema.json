@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lobojoel2003/Spendtally/rules/schema.json",
+  "title": "Spendtally state spend-down rules",
+  "description": "How one state's Medicaid spend-down (medically needy) program works. One file per state in rules/states/.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "code",
+    "name",
+    "programName",
+    "spenddownTerm",
+    "agency",
+    "period",
+    "submission",
+    "rules",
+    "notes",
+    "sources",
+    "lastReviewed",
+    "confidence"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "code": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "USPS two-letter code. Must match the file name."
+    },
+    "name": { "type": "string", "minLength": 2 },
+    "programName": {
+      "type": "string",
+      "minLength": 3,
+      "description": "What the state calls the program."
+    },
+    "spenddownTerm": {
+      "type": "string",
+      "pattern": "^[a-z][a-z -]*$",
+      "description": "Lowercase word used in sentences, e.g. \"spenddown\", \"share of cost\", \"deductible\"."
+    },
+    "agency": { "type": "string", "minLength": 3 },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["defaultMonths", "allowedMonths", "description"],
+      "properties": {
+        "defaultMonths": { "type": "integer", "minimum": 1, "maximum": 6 },
+        "allowedMonths": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 1, "maximum": 6 }
+        },
+        "description": { "type": "string", "minLength": 10 }
+      }
+    },
+    "submission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["methods", "payIn", "description"],
+      "properties": {
+        "methods": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["fax", "mail", "upload", "in-person", "email", "phone"] }
+        },
+        "payIn": {
+          "type": ["boolean", "null"],
+          "description": "Can the person pay the excess to the agency instead of sending bills?"
+        },
+        "description": { "type": "string", "minLength": 10 }
+      }
+    },
+    "rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "paidBillsServiceMonthOnly",
+        "unpaidBillsCarryForward",
+        "unpaidMedicaidProviderOneMonth",
+        "premiumsCount",
+        "retroactiveMonths"
+      ],
+      "properties": {
+        "paidBillsServiceMonthOnly": { "type": ["boolean", "null"] },
+        "unpaidBillsCarryForward": { "type": ["boolean", "null"] },
+        "unpaidMedicaidProviderOneMonth": { "type": ["boolean", "null"] },
+        "premiumsCount": { "type": ["boolean", "null"] },
+        "retroactiveMonths": { "type": ["integer", "null"], "minimum": 0, "maximum": 12 }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "maxItems": 6,
+      "items": { "type": "string", "minLength": 5, "maxLength": 280 }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "url"],
+        "properties": {
+          "title": { "type": "string", "minLength": 3 },
+          "url": { "type": "string", "pattern": "^https?://" }
+        }
+      }
+    },
+    "lastReviewed": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "confidence": { "enum": ["high", "medium", "low"] }
+  }
+}
