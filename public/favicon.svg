@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Spendtally</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16897d"/>
+      <stop offset="1" stop-color="#0a4740"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b6f0c6"/>
+      <stop offset="1" stop-color="#4cc08a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="44"/>
+  <path d="M256 106A150 150 0 1 1 115 205" fill="none" stroke="url(#arc)" stroke-width="44" stroke-linecap="round"/>
+  <g stroke="#fff" stroke-width="22" stroke-linecap="round" fill="none">
+    <path d="M206 208v96M240 208v96M274 208v96M308 208v96"/>
+    <path d="M188 290 326 222"/>
+  </g>
+</svg>
